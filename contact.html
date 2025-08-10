@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Lex Advisors</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Language Selector -->
+  <div class="lang-bar">
+    <select aria-label="Language selector">
+      <option>EN</option>
+      <!-- <option>ES</option> -->
+    </select>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <img src="files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Lex Advisors</span>
+          <span class="logo-tagline">Your lawyer at Land's End.</span>
+        </div>
+      </div>
+      
+              <nav class="main-navigation">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <span class="nav-text">Home</span>
+                <span class="nav-indicator"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">
+                <span class="nav-text">Services</span>
+                <span class="nav-indicator"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="team.html" class="nav-link">
+                <span class="nav-text">Team</span>
+                <span class="nav-indicator"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link active">
+                <span class="nav-text">Contact</span>
+                <span class="nav-indicator"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1>Contact Us</h1>
+    <!-- Address Block -->
+    <section class="contact-info">
+      <h2>Our Office</h2>
+      <address>
+        Paseo Finisterra #136 Suite 6 & 10<br>
+        San José del Cabo, B.C.S. 23406<br>
+        Tel: (624) 142 5453 | (624) 142 5452<br>
+        US & CAN: predial 011 (52)<br>
+        Email: <a href="mailto:info@lexadvisors.com.mx">info@lexadvisors.com.mx</a>
+      </address>
+    </section>
+    <!-- Map Embed -->
+    <section class="map-embed">
+      <h2>Find Us</h2>
+      <iframe src="https://www.google.com/maps?q=Paseo+Finisterra+136,+San+Jos%C3%A9+del+Cabo,+B.C.S.,+Mexico&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+      <h2>Send Us a Message</h2>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+        <div class="form-message" id="formMessage"></div>
+      </form>
+    </section>
+    <!-- Legal Disclaimer (optional) -->
+    <section class="legal-disclaimer">
+      <p>All information submitted is kept confidential and handled in accordance with our <a href="privacy.html">Privacy Notice</a>.</p>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>© 2024 Lex Advisors. All rights reserved.</div>
+      <div>
+        <a href="privacy.html">Privacy Notice</a> |
+        Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 

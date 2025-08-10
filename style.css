@@ -497,6 +497,108 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+/* Contact Page Hero Section */
+.contact-hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem 4rem 2rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(16, 64, 90, 0.1);
+  z-index: 1;
+}
+
+.contact-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+}
+
+/* Office Section */
+.office-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.office-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.office-info h2 {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.office-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.office-address h3,
+.office-contact h3,
+.office-hours h3 {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.office-address p,
+.office-contact p,
+.office-hours p {
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.office-contact a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.office-contact a:hover {
+  color: var(--color-secondary);
+}
+
+.office-map h3 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
 /* Privacy Notice */
 .privacy-content {
   max-width: 900px;
@@ -1772,6 +1874,21 @@ main h1 {
   .services-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+  }
+  
+  /* Contact Page Responsive */
+  .contact-title {
+    font-size: 2.8rem;
+  }
+  .contact-subtitle {
+    font-size: 1.1rem;
+  }
+  .office-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .office-info h2 {
+    font-size: 2rem;
   }
 }
 

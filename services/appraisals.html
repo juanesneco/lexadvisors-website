@@ -4,40 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Appraisals | Lex Advisors</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Language Selector -->
-  <div class="lang-bar">
-    <select aria-label="Language selector">
-      <option>EN</option>
-      <!-- <option>ES</option> -->
-    </select>
-  </div>
-
-  <!-- Header & Logo -->
+  <!-- Header & Navigation -->
   <header class="site-header">
-    <div class="header-top">
+    <div class="header-container">
       <div class="logo-area">
-        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img" style="height:60px;vertical-align:middle;">
-        <span class="logo-text">
-          <span class="logo-main">Lex Advisors</span><br>
+        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Lex Advisors</span>
           <span class="logo-tagline">Your lawyer at Land's End.</span>
-        </span>
+        </div>
+      </div>
+      
+      <nav class="main-navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <span class="nav-text">Home</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../services.html" class="nav-link active">
+              <span class="nav-text">Services</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../team.html" class="nav-link">
+              <span class="nav-text">Team</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link">
+              <span class="nav-text">Contact</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    <nav class="navbar minimal-nav">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
@@ -46,7 +64,7 @@
       <div class="service-hero-content">
         <h1 class="service-title">Appraisals</h1>
         <div class="service-breadcrumb">
-          <a href="services.html">Services</a> / Appraisals
+          <a href="../services.html">Services</a> / Appraisals
         </div>
       </div>
     </section>
@@ -54,11 +72,15 @@
     <!-- Service Content -->
     <section class="service-content">
       <div class="service-text">
-        <p>It is one thing to know how to asses the value of an asset, but it is yet another matter to understand the consequences of bestowing a value to said asset. We comprehend well both of these elements, allowing us to provide you with knowledgeable options on how to tackle important, everyday transactions all while acting in an ethic and intelligent manner.</p>
+        <p>Lex Advisors provides <strong>expert appraisal services</strong> for real estate and commercial assets, delivering accurate valuations that meet legal and financial requirements.</p>
         
-        <p>Although Real Estate is the key focus for us regarding appraisals, we are recognized professionals in the execution of appraisals of businesses, corporations, legal entities, goods and other commercial assets.</p>
+        <p>Our appraisal team includes <strong>certified appraisers and legal professionals</strong> who understand both the <strong>market dynamics and legal requirements</strong> for property valuations in Mexico. We provide <strong>comprehensive appraisal reports</strong> that are accepted by banks, courts, and government agencies.</p>
         
-        <p>At Lex Advisors, we have nation-wide recognized appraisers that can provide you with this service. Our appraisals are recognized at the international stage.</p>
+        <p>We specialize in <strong>residential properties, commercial real estate, land valuations, and business asset appraisals</strong>. Our appraisals are conducted using <strong>industry-standard methodologies</strong> and include detailed market analysis, comparable sales, and legal considerations.</p>
+        
+        <p>Whether you need an appraisal for <strong>purchase, sale, financing, insurance, or legal proceedings</strong>, our team provides <strong>reliable, defensible valuations</strong> that protect your interests and meet all regulatory requirements.</p>
+        
+        <p>With <strong>25+ years of experience</strong> in the Baja California real estate market, Lex Advisors has established a reputation for <strong>accurate, professional appraisals</strong> that clients can trust for their most important financial decisions.</p>
       </div>
     </section>
 
@@ -74,13 +96,13 @@
           <h3>Title Search</h3>
           <p>Deep title searches to minimize future liabilities</p>
         </a>
-        <a href="corporate.html" class="service-card">
-          <h3>Corporate Services</h3>
-          <p>Entity creation, transformation, and corporate compliance</p>
+        <a href="notary-services.html" class="service-card">
+          <h3>Notary Services</h3>
+          <p>Essential for successful legal acts in Mexico</p>
         </a>
-        <a href="tax-law.html" class="service-card">
-          <h3>Tax Law</h3>
-          <p>Navigating complex tax systems and compliance</p>
+        <a href="entitlement.html" class="service-card">
+          <h3>Rights & Entitlement</h3>
+          <p>Securing governmental permit approvals efficiently</p>
         </a>
       </div>
     </section>
@@ -89,11 +111,13 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
-      <div><a href="privacy.html">Privacy Notice</a></div>
       <div>© 2024 Lex Advisors. All rights reserved.</div>
-      <div>Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx</div>
+      <div>
+        <a href="../privacy.html">Privacy Notice</a> |
+        Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+      </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

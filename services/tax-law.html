@@ -4,40 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tax Law | Lex Advisors</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Language Selector -->
-  <div class="lang-bar">
-    <select aria-label="Language selector">
-      <option>EN</option>
-      <!-- <option>ES</option> -->
-    </select>
-  </div>
-
-  <!-- Header & Logo -->
+  <!-- Header & Navigation -->
   <header class="site-header">
-    <div class="header-top">
+    <div class="header-container">
       <div class="logo-area">
-        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img" style="height:60px;vertical-align:middle;">
-        <span class="logo-text">
-          <span class="logo-main">Lex Advisors</span><br>
+        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Lex Advisors</span>
           <span class="logo-tagline">Your lawyer at Land's End.</span>
-        </span>
+        </div>
+      </div>
+      
+      <nav class="main-navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <span class="nav-text">Home</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../services.html" class="nav-link active">
+              <span class="nav-text">Services</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../team.html" class="nav-link">
+              <span class="nav-text">Team</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link">
+              <span class="nav-text">Contact</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    <nav class="navbar minimal-nav">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
@@ -46,7 +64,7 @@
       <div class="service-hero-content">
         <h1 class="service-title">Tax Law</h1>
         <div class="service-breadcrumb">
-          <a href="services.html">Services</a> / Tax Law
+          <a href="../services.html">Services</a> / Tax Law
         </div>
       </div>
     </section>
@@ -54,13 +72,15 @@
     <!-- Service Content -->
     <section class="service-content">
       <div class="service-text">
-        <p>Governments around the world are consistently pursuing public policies that demand more of the taxpayer from any way you look at it.</p>
+        <p>Lex Advisors provides comprehensive <strong>tax law services</strong> to help individuals and businesses navigate the complex Mexican tax system and optimize their tax positions.</p>
         
-        <p>Tax revenue expectations from the government towards the corporate world is increasing exponentially; this, coupled with the complex technicalities of procedures and formalities of the tax system, may be a stress generating factor for entities seeking to strive in the modern corporate world.</p>
+        <p>Our tax law practice covers <strong>tax planning, compliance, audits, disputes, and international tax matters</strong>. We work with clients to ensure they meet all <strong>Mexican tax obligations</strong> while maximizing available benefits and minimizing tax liabilities.</p>
         
-        <p>Regardless of whether the subject at hand is a globally consolidated business or a newly innovated start-up, every modern business structure requires of thoughtful know-how and understanding of the complex and ever-changing tides of the taxation world. In synergy with our other services, we can help you navigate these waters in a practical and effective demeanor.</p>
+        <p>We assist with <strong>corporate tax planning, personal tax compliance, international tax matters, and tax dispute resolution</strong>. Our team ensures that all tax strategies comply with <strong>Mexican tax law and international tax treaties</strong>.</p>
         
-        <p>We have lawyers with the practical experience required for you to design the structure of your business according to your goals. We are experts on interpretation and application of tax treaties, FATCA, CRS and BEPS measures to promote cross border tax compliance to produce substantial business results.</p>
+        <p>Whether you're <strong>starting a business, making investments, or dealing with tax authorities</strong>, our tax law services provide the <strong>expert guidance and strategic planning</strong> you need to achieve optimal tax outcomes.</p>
+        
+        <p>With <strong>25+ years of experience</strong> in Mexican tax law, Lex Advisors has helped <strong>hundreds of clients</strong> successfully navigate tax challenges, ensuring <strong>compliance, optimization, and peace of mind</strong>.</p>
       </div>
     </section>
 
@@ -76,9 +96,9 @@
           <h3>Real Estate</h3>
           <p>Comprehensive legal aid for real estate transactions</p>
         </a>
-        <a href="labour.html" class="service-card">
-          <h3>Employment Law</h3>
-          <p>Comprehensive labour law services and litigation</p>
+        <a href="compliance-anti-money-laundering.html" class="service-card">
+          <h3>Compliance & Anti-Money Laundering</h3>
+          <p>Regulatory compliance and AML program development</p>
         </a>
         <a href="appraisals.html" class="service-card">
           <h3>Appraisals</h3>
@@ -91,11 +111,13 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
-      <div><a href="privacy.html">Privacy Notice</a></div>
       <div>© 2024 Lex Advisors. All rights reserved.</div>
-      <div>Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx</div>
+      <div>
+        <a href="../privacy.html">Privacy Notice</a> |
+        Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+      </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

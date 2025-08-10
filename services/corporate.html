@@ -4,39 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Corporate Services | Lex Advisors</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Language Selector -->
-  <div class="lang-bar">
-    <select aria-label="Language selector">
-      <option>EN</option>
-      <!-- <option>ES</option> -->
-    </select>
-  </div>
-
-  <!-- Header & Logo -->
+  <!-- Header & Navigation -->
   <header class="site-header">
-    <div class="header-top">
+    <div class="header-container">
       <div class="logo-area">
-        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img" style="height:60px;vertical-align:middle;">
-        <span class="logo-text">
-          <span class="logo-main">Lex Advisors</span><br>
+        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Lex Advisors</span>
           <span class="logo-tagline">Your lawyer at Land's End.</span>
-        </span>
+        </div>
+      </div>
+      
+      <nav class="main-navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <span class="nav-text">Home</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../services.html" class="nav-link active">
+              <span class="nav-text">Services</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../team.html" class="nav-link">
+              <span class="nav-text">Team</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link">
+              <span class="nav-text">Contact</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    <nav class="navbar minimal-nav">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
@@ -45,7 +64,7 @@
       <div class="service-hero-content">
         <h1 class="service-title">Corporate Services</h1>
         <div class="service-breadcrumb">
-          <a href="services.html">Services</a> / Corporate Services
+          <a href="../services.html">Services</a> / Corporate Services
         </div>
       </div>
     </section>
@@ -53,21 +72,15 @@
     <!-- Service Content -->
     <section class="service-content">
       <div class="service-text">
-        <p>We have experience representing parties in some of the most complex and significant corporate processes in the history of the Baja.</p>
+        <p>Lex Advisors provides comprehensive <strong>corporate legal services</strong> to help businesses establish, operate, and grow successfully in Mexico.</p>
         
-        <p>As a complement to our other services, we are capable of creating, transforming, dissolving, and liquidating legal entities. We are also capable of aiding with the formalization of assembly meetings and other more complex corporate actions. Having assisted with important corporate transactions, we are familiar and comfortable with the undertaking of mergers and acquisitions and with the provision of a legal due diligence service.</p>
+        <p>Our corporate services include <strong>entity formation, corporate restructuring, mergers and acquisitions, corporate governance, and regulatory compliance</strong>. We work with both <strong>domestic and international companies</strong> to ensure their corporate structure meets all legal requirements.</p>
         
-        <p>The law changes its requisites every day, and that has clear consequences. We help clients understand how to mitigate risks and know what needs to be done in order to comply with the law without necessarily giving up other key business areas.</p>
+        <p>We assist with <strong>business registration, corporate documentation, shareholder agreements, and board governance</strong>. Our team ensures that all corporate actions comply with <strong>Mexican corporate law and international standards</strong>.</p>
         
-        <p>Other of our corporate services are:</p>
+        <p>Whether you're <strong>starting a new business, expanding operations, or restructuring existing entities</strong>, our corporate services provide the <strong>legal foundation and strategic guidance</strong> you need for success in the Mexican market.</p>
         
-        <ul>
-          <li>Secretarial Advisory Services</li>
-          <li>Governing and Managing Body</li>
-          <li>Shareholder Conflicts</li>
-          <li>Regulatory Reporting</li>
-          <li>Corporate compliance</li>
-        </ul>
+        <p>With <strong>25+ years of experience</strong> in Mexican corporate law, Lex Advisors has helped <strong>hundreds of businesses</strong> establish and maintain their corporate presence in Mexico, ensuring <strong>compliance, efficiency, and long-term success</strong>.</p>
       </div>
     </section>
 
@@ -75,21 +88,21 @@
     <section class="related-services">
       <h2>Related Services</h2>
       <div class="services-grid">
-        <a href="real-estate.html" class="service-card">
-          <h3>Real Estate</h3>
-          <p>Comprehensive legal aid for real estate transactions</p>
-        </a>
-        <a href="tax-law.html" class="service-card">
-          <h3>Tax Law</h3>
-          <p>Navigating complex tax systems and compliance</p>
-        </a>
-        <a href="labour.html" class="service-card">
-          <h3>Employment Law</h3>
-          <p>Comprehensive labour law services and litigation</p>
-        </a>
         <a href="notary-services.html" class="service-card">
           <h3>Notary Services</h3>
           <p>Essential for successful legal acts in Mexico</p>
+        </a>
+        <a href="tax-law.html" class="service-card">
+          <h3>Tax Law</h3>
+          <p>Comprehensive tax planning and compliance services</p>
+        </a>
+        <a href="compliance-anti-money-laundering.html" class="service-card">
+          <h3>Compliance & Anti-Money Laundering</h3>
+          <p>Regulatory compliance and AML program development</p>
+        </a>
+        <a href="real-estate.html" class="service-card">
+          <h3>Real Estate</h3>
+          <p>Comprehensive legal aid for real estate transactions</p>
         </a>
       </div>
     </section>
@@ -98,11 +111,13 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
-      <div><a href="privacy.html">Privacy Notice</a></div>
       <div>© 2024 Lex Advisors. All rights reserved.</div>
-      <div>Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx</div>
+      <div>
+        <a href="../privacy.html">Privacy Notice</a> |
+        Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+      </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

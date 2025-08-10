@@ -3,50 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Construction & Development | Lex Advisors</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Construction Law | Lex Advisors</title>
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Language Selector -->
-  <div class="lang-bar">
-    <select aria-label="Language selector">
-      <option>EN</option>
-      <!-- <option>ES</option> -->
-    </select>
-  </div>
-
-  <!-- Header & Logo -->
+  <!-- Header & Navigation -->
   <header class="site-header">
-    <div class="header-top">
+    <div class="header-container">
       <div class="logo-area">
-        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img" style="height:60px;vertical-align:middle;">
-        <span class="logo-text">
-          <span class="logo-main">Lex Advisors</span><br>
+        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Lex Advisors</span>
           <span class="logo-tagline">Your lawyer at Land's End.</span>
-        </span>
+        </div>
+      </div>
+      
+      <nav class="main-navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <span class="nav-text">Home</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../services.html" class="nav-link active">
+              <span class="nav-text">Services</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../team.html" class="nav-link">
+              <span class="nav-text">Team</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link">
+              <span class="nav-text">Contact</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    <nav class="navbar minimal-nav">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
     <!-- Service Hero Section -->
     <section class="service-hero">
       <div class="service-hero-content">
-        <h1 class="service-title">Construction & Development</h1>
+        <h1 class="service-title">Construction Law</h1>
         <div class="service-breadcrumb">
-          <a href="services.html">Services</a> / Construction & Development
+          <a href="../services.html">Services</a> / Construction Law
         </div>
       </div>
     </section>
@@ -54,11 +72,15 @@
     <!-- Service Content -->
     <section class="service-content">
       <div class="service-text">
-        <p>Ideas and projects are exciting. Nevertheless, it is possible to be so consumed by the deep excitement and creativity to the degree that one loses track of important details needed to successfully fulfill the expectations of the project. That is when we step in.</p>
+        <p>Lex Advisors provides comprehensive <strong>construction law services</strong> to help developers, contractors, and property owners navigate the complex legal landscape of construction projects in Mexico.</p>
         
-        <p>We are experts in entitlements, strategies and procedures for real estate projects, businesses and general construction. We have the know-how to establish the correct structure and logistics for a successful development team to work efficiently, all while being integrated by various professionals with different specialties, with diverse point of views and even from different countries to form a general perspective that provides efficient results in the licensing process, prevents legal problems, provides fiscal benefits and economic savings as well as integral coordination between all levels and phases of a real estate development - preliminary project, licensing, construction, condominium/subdivision structuring and organization, marketing and sales closing - which is key to translate into a successful business development; all while sticking to the envisioners end-goal.</p>
+        <p>Our construction law practice covers <strong>construction contracts, permit acquisition, zoning compliance, contractor disputes, and project management</strong>. We work with all parties involved in construction projects to ensure <strong>legal compliance and project success</strong>.</p>
         
-        <p>We are distinctively experienced with the set up of legal structure for complex real estate developments, condominiums, prestigious culinary centers, restaurants, and boutique hotels.</p>
+        <p>We assist with <strong>construction agreements, development permits, environmental compliance, and dispute resolution</strong>. Our team ensures that all construction activities comply with <strong>Mexican construction law, environmental regulations, and local building codes</strong>.</p>
+        
+        <p>Whether you're <strong>planning a new development, managing construction contracts, or resolving construction disputes</strong>, our construction law services provide the <strong>legal foundation and strategic guidance</strong> you need for successful project completion.</p>
+        
+        <p>With <strong>25+ years of experience</strong> in Mexican construction law, Lex Advisors has helped <strong>numerous developers and contractors</strong> successfully complete projects throughout Baja California, ensuring <strong>legal compliance and project efficiency</strong>.</p>
       </div>
     </section>
 
@@ -74,13 +96,13 @@
           <h3>Rights & Entitlement</h3>
           <p>Securing governmental permit approvals efficiently</p>
         </a>
+        <a href="appraisals.html" class="service-card">
+          <h3>Appraisals</h3>
+          <p>Expert valuations for real estate and commercial assets</p>
+        </a>
         <a href="corporate.html" class="service-card">
           <h3>Corporate Services</h3>
           <p>Entity creation, transformation, and corporate compliance</p>
-        </a>
-        <a href="tax-law.html" class="service-card">
-          <h3>Tax Law</h3>
-          <p>Navigating complex tax systems and compliance</p>
         </a>
       </div>
     </section>
@@ -89,11 +111,13 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
-      <div><a href="privacy.html">Privacy Notice</a></div>
       <div>© 2024 Lex Advisors. All rights reserved.</div>
-      <div>Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx</div>
+      <div>
+        <a href="../privacy.html">Privacy Notice</a> |
+        Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+      </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

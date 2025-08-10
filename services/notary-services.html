@@ -4,39 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notary Services | Lex Advisors</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Language Selector -->
-  <div class="lang-bar">
-    <select aria-label="Language selector">
-      <option>EN</option>
-      <!-- <option>ES</option> -->
-    </select>
-  </div>
-
-  <!-- Header & Logo -->
+  <!-- Header & Navigation -->
   <header class="site-header">
-    <div class="header-top">
+    <div class="header-container">
       <div class="logo-area">
-        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img" style="height:60px;vertical-align:middle;">
-        <span class="logo-text">
-          <span class="logo-main">Lex Advisors</span><br>
+        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Lex Advisors</span>
           <span class="logo-tagline">Your lawyer at Land's End.</span>
-        </span>
+        </div>
+      </div>
+      
+      <nav class="main-navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <span class="nav-text">Home</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../services.html" class="nav-link active">
+              <span class="nav-text">Services</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../team.html" class="nav-link">
+              <span class="nav-text">Team</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link">
+              <span class="nav-text">Contact</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    <nav class="navbar minimal-nav">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
@@ -45,7 +64,7 @@
       <div class="service-hero-content">
         <h1 class="service-title">Notary Services</h1>
         <div class="service-breadcrumb">
-          <a href="services.html">Services</a> / Notary Services
+          <a href="../services.html">Services</a> / Notary Services
         </div>
       </div>
     </section>
@@ -53,11 +72,15 @@
     <!-- Service Content -->
     <section class="service-content">
       <div class="service-text">
-        <p>Our founding partner was, at the moment of his licensing examination, the youngest certified Federal Notary of the country. He is also, simultaneously, an active alternate State Notary.</p>
+        <p>Our founding partner was, at the moment of his licensing examination, <strong>the youngest certified Federal Notary of the country</strong>. He is also, simultaneously, an <strong>active alternate State Notary</strong>.</p>
         
-        <p>A Notary Public is vital for the successful execution of many legal acts in Mexico. It is important for foreigners to understand that these individuals are essential in the daily civil, business and corporate initiatives. In Mexico, a Notary Public is a highly qualified attorney that has satisfactorily surpassed numerous formal legal qualifications.</p>
+        <p>A <strong>Notary Public is vital for the successful execution of many legal acts in Mexico</strong>. It is important for foreigners to understand that these individuals are essential in the daily <strong>civil, business and corporate initiatives</strong>. In Mexico, a Notary Public is a <strong>highly qualified attorney</strong> that has satisfactorily surpassed numerous formal legal qualifications.</p>
         
-        <p>We are able to facilitate provide all State and Federal Notary Services.</p>
+        <p>We are able to facilitate provide all <strong>State and Federal Notary Services</strong>, ensuring that all your legal documents are properly authenticated and legally binding.</p>
+        
+        <p>Whether you need <strong>document authentication, contract notarization, or legal certification</strong>, our notary services provide the <strong>legal foundation and peace of mind</strong> you require for your transactions in Mexico.</p>
+        
+        <p>With <strong>25+ years of experience</strong> in Mexican legal procedures, Lex Advisors has established strong relationships with <strong>reputable notaries throughout Baja California</strong>, ensuring efficient and reliable service for all your notarial needs.</p>
       </div>
     </section>
 
@@ -88,11 +111,13 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
-      <div><a href="privacy.html">Privacy Notice</a></div>
       <div>© 2024 Lex Advisors. All rights reserved.</div>
-      <div>Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx</div>
+      <div>
+        <a href="../privacy.html">Privacy Notice</a> |
+        Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+      </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

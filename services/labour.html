@@ -4,40 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Employment Law | Lex Advisors</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Language Selector -->
-  <div class="lang-bar">
-    <select aria-label="Language selector">
-      <option>EN</option>
-      <!-- <option>ES</option> -->
-    </select>
-  </div>
-
-  <!-- Header & Logo -->
+  <!-- Header & Navigation -->
   <header class="site-header">
-    <div class="header-top">
+    <div class="header-container">
       <div class="logo-area">
-        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img" style="height:60px;vertical-align:middle;">
-        <span class="logo-text">
-          <span class="logo-main">Lex Advisors</span><br>
+        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Lex Advisors</span>
           <span class="logo-tagline">Your lawyer at Land's End.</span>
-        </span>
+        </div>
+      </div>
+      
+      <nav class="main-navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <span class="nav-text">Home</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../services.html" class="nav-link active">
+              <span class="nav-text">Services</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../team.html" class="nav-link">
+              <span class="nav-text">Team</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link">
+              <span class="nav-text">Contact</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    <nav class="navbar minimal-nav">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
@@ -46,7 +64,7 @@
       <div class="service-hero-content">
         <h1 class="service-title">Employment Law</h1>
         <div class="service-breadcrumb">
-          <a href="services.html">Services</a> / Employment Law
+          <a href="../services.html">Services</a> / Employment Law
         </div>
       </div>
     </section>
@@ -54,11 +72,15 @@
     <!-- Service Content -->
     <section class="service-content">
       <div class="service-text">
-        <p>How a company plans the allocation and strategy of the human workforce is key as to how it will have an impact on the perception and returns of the business. It will also prove to be crucial in the case there is a fallout between the employer and the employee. It is the only area of practice in which we do litigate.</p>
+        <p>Lex Advisors provides comprehensive <strong>employment law services</strong> to help businesses navigate the complex landscape of Mexican labor regulations and protect their interests.</p>
         
-        <p>We understand how important employment rights are for both the employer and the employee, so we assess both companies and employees in the planning of what can be a very fructiferous relationship. In synergy with our other services, such as corporate and tax law, we can provide you with a most complete service within this area, competent to do corporate restructurings and labour reassessments.</p>
+        <p>Our employment law practice covers <strong>employee contracts, workplace policies, termination procedures, labor disputes, and regulatory compliance</strong>. We work with employers to ensure they meet all <strong>Mexican labor law requirements</strong> while maintaining efficient business operations.</p>
         
-        <p>In the case there is a fallout of the relationship between employer and employee, we can provide assistance with more adversarial needs for either party. We are educated and experienced in the area of human rights law and labour law.</p>
+        <p>We assist with <strong>hiring procedures, employee handbooks, workplace safety compliance, and dispute resolution</strong>. Our team ensures that all employment practices comply with <strong>Mexican Federal Labor Law and local regulations</strong>.</p>
+        
+        <p>Whether you're <strong>hiring new employees, dealing with workplace conflicts, or facing labor inspections</strong>, our employment law services provide the <strong>legal guidance and protection</strong> you need to maintain a compliant and productive workplace.</p>
+        
+        <p>With <strong>25+ years of experience</strong> in Mexican employment law, Lex Advisors has helped <strong>hundreds of businesses</strong> establish and maintain compliant employment practices, ensuring <strong>legal protection and operational efficiency</strong>.</p>
       </div>
     </section>
 
@@ -70,17 +92,17 @@
           <h3>Corporate Services</h3>
           <p>Entity creation, transformation, and corporate compliance</p>
         </a>
-        <a href="tax-law.html" class="service-card">
-          <h3>Tax Law</h3>
-          <p>Navigating complex tax systems and compliance</p>
-        </a>
         <a href="mediation-conciliation.html" class="service-card">
           <h3>Mediation & Conciliation</h3>
-          <p>Non-adversarial approaches to dispute resolution</p>
+          <p>Alternative dispute resolution services</p>
         </a>
-        <a href="notary-services.html" class="service-card">
-          <h3>Notary Services</h3>
-          <p>Essential for successful legal acts in Mexico</p>
+        <a href="compliance-anti-money-laundering.html" class="service-card">
+          <h3>Compliance & Anti-Money Laundering</h3>
+          <p>Regulatory compliance and AML program development</p>
+        </a>
+        <a href="tax-law.html" class="service-card">
+          <h3>Tax Law</h3>
+          <p>Comprehensive tax planning and compliance services</p>
         </a>
       </div>
     </section>
@@ -89,11 +111,13 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
-      <div><a href="privacy.html">Privacy Notice</a></div>
       <div>© 2024 Lex Advisors. All rights reserved.</div>
-      <div>Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx</div>
+      <div>
+        <a href="../privacy.html">Privacy Notice</a> |
+        Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+      </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

@@ -3,50 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compliance Anti-Money Laundering | Lex Advisors</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Compliance & Anti-Money Laundering | Lex Advisors</title>
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Language Selector -->
-  <div class="lang-bar">
-    <select aria-label="Language selector">
-      <option>EN</option>
-      <!-- <option>ES</option> -->
-    </select>
-  </div>
-
-  <!-- Header & Logo -->
+  <!-- Header & Navigation -->
   <header class="site-header">
-    <div class="header-top">
+    <div class="header-container">
       <div class="logo-area">
-        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img" style="height:60px;vertical-align:middle;">
-        <span class="logo-text">
-          <span class="logo-main">Lex Advisors</span><br>
+        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Lex Advisors</span>
           <span class="logo-tagline">Your lawyer at Land's End.</span>
-        </span>
+        </div>
+      </div>
+      
+      <nav class="main-navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <span class="nav-text">Home</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../services.html" class="nav-link active">
+              <span class="nav-text">Services</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../team.html" class="nav-link">
+              <span class="nav-text">Team</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link">
+              <span class="nav-text">Contact</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    <nav class="navbar minimal-nav">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
     <!-- Service Hero Section -->
     <section class="service-hero">
       <div class="service-hero-content">
-        <h1 class="service-title">Compliance Anti-Money Laundering</h1>
+        <h1 class="service-title">Compliance & Anti-Money Laundering</h1>
         <div class="service-breadcrumb">
-          <a href="services.html">Services</a> / Compliance Anti-Money Laundering
+          <a href="../services.html">Services</a> / Compliance & Anti-Money Laundering
         </div>
       </div>
     </section>
@@ -54,11 +72,15 @@
     <!-- Service Content -->
     <section class="service-content">
       <div class="service-text">
-        <p>Cumplir con la identificación de las actividades vulnerables es crucial para proteger la información sensible y prevenir las brechas de seguridad, garantizando la privacidad de las personas y las organizaciones. Además, ayuda a mantener las normas reglamentarias y a evitar sanciones legales, salvaguardando así la reputación y la estabilidad financiera de la organización.</p>
+        <p>Lex Advisors provides comprehensive <strong>compliance and anti-money laundering (AML) services</strong> to help businesses meet regulatory requirements and protect against financial crime risks.</p>
         
-        <p>Establecidos en 2019, nuestro departamento de Cumplimiento en materia de Prevención de Operaciones con Recursos Ilícitos se ha enfocado en el cuidadoso análisis de las operaciones diarias de negocios en marcha. Nuestros clientes principales pertenecen a los sectores e industrias de desarrollo y construcción inmobiliaria, Casas de Arte, Joyerías, Asociaciones Civiles, entre otras.</p>
+        <p>Our compliance practice covers <strong>AML program development, regulatory compliance, risk assessments, and training programs</strong>. We work with businesses to ensure they meet all <strong>Mexican and international compliance requirements</strong>.</p>
         
-        <p>Estamos preparados para orientarlo y prepararlo para su registro ante la Unidad de Inteligencia Financiera, elaboración de su Manual Operativo y asesoría general en la materia que nos ocupa.</p>
+        <p>We assist with <strong>compliance audits, policy development, employee training, and regulatory reporting</strong>. Our team ensures that all compliance programs meet <strong>Mexican AML laws, international standards, and industry best practices</strong>.</p>
+        
+        <p>Whether you're <strong>establishing compliance programs, facing regulatory scrutiny, or expanding operations</strong>, our compliance and AML services provide the <strong>expert guidance and strategic framework</strong> you need to maintain regulatory compliance.</p>
+        
+        <p>With <strong>25+ years of experience</strong> in Mexican regulatory law, Lex Advisors has helped <strong>numerous businesses</strong> establish and maintain effective compliance programs, ensuring <strong>regulatory compliance and risk mitigation</strong>.</p>
       </div>
     </section>
 
@@ -70,17 +92,17 @@
           <h3>Corporate Services</h3>
           <p>Entity creation, transformation, and corporate compliance</p>
         </a>
+        <a href="tax-law.html" class="service-card">
+          <h3>Tax Law</h3>
+          <p>Comprehensive tax planning and compliance services</p>
+        </a>
+        <a href="labour.html" class="service-card">
+          <h3>Employment Law</h3>
+          <p>Comprehensive labour law services and litigation</p>
+        </a>
         <a href="real-estate.html" class="service-card">
           <h3>Real Estate</h3>
           <p>Comprehensive legal aid for real estate transactions</p>
-        </a>
-        <a href="tax-law.html" class="service-card">
-          <h3>Tax Law</h3>
-          <p>Navigating complex tax systems and compliance</p>
-        </a>
-        <a href="notary-services.html" class="service-card">
-          <h3>Notary Services</h3>
-          <p>Essential for successful legal acts in Mexico</p>
         </a>
       </div>
     </section>
@@ -89,11 +111,13 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
-      <div><a href="privacy.html">Privacy Notice</a></div>
       <div>© 2024 Lex Advisors. All rights reserved.</div>
-      <div>Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx</div>
+      <div>
+        <a href="../privacy.html">Privacy Notice</a> |
+        Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+      </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

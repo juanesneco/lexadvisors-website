@@ -4,40 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title Search | Lex Advisors</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Language Selector -->
-  <div class="lang-bar">
-    <select aria-label="Language selector">
-      <option>EN</option>
-      <!-- <option>ES</option> -->
-    </select>
-  </div>
-
-  <!-- Header & Logo -->
+  <!-- Header & Navigation -->
   <header class="site-header">
-    <div class="header-top">
+    <div class="header-container">
       <div class="logo-area">
-        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img" style="height:60px;vertical-align:middle;">
-        <span class="logo-text">
-          <span class="logo-main">Lex Advisors</span><br>
+        <img src="../files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Lex Advisors</span>
           <span class="logo-tagline">Your lawyer at Land's End.</span>
-        </span>
+        </div>
+      </div>
+      
+      <nav class="main-navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <span class="nav-text">Home</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../services.html" class="nav-link active">
+              <span class="nav-text">Services</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../team.html" class="nav-link">
+              <span class="nav-text">Team</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link">
+              <span class="nav-text">Contact</span>
+              <span class="nav-indicator"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    <nav class="navbar minimal-nav">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
@@ -46,7 +64,7 @@
       <div class="service-hero-content">
         <h1 class="service-title">Title Search</h1>
         <div class="service-breadcrumb">
-          <a href="services.html">Services</a> / Title Search
+          <a href="../services.html">Services</a> / Title Search
         </div>
       </div>
     </section>
@@ -54,11 +72,15 @@
     <!-- Service Content -->
     <section class="service-content">
       <div class="service-text">
-        <p>Informally known as the private Public Registry of Los Cabos, Lex Advisors has extremely knowledgeable personnel in regard to title searches and title history findings. We know baja.</p>
+        <p>Lex Advisors provides comprehensive <strong>title search services</strong> to help clients identify potential issues and ensure clear property ownership before real estate transactions.</p>
         
-        <p>We can provide you with a deep title search in order for you to decide if it really is worth your time and investment, thus minimizing the potential future liabilities upon your path.</p>
+        <p>Our title search practice covers <strong>property history, ownership verification, lien searches, and encumbrance identification</strong>. We conduct <strong>thorough investigations</strong> to uncover any potential issues that could affect property ownership or value.</p>
         
-        <p>This is a vital service if you are seeking to be eligible for Title Insurance. We are endorsed and authorized to conduct these services by some of the main title insurance companies in North America.</p>
+        <p>We assist with <strong>public record searches, ownership chain verification, lien and judgment searches, and title insurance preparation</strong>. Our team ensures that all title searches comply with <strong>Mexican property law and regulatory requirements</strong>.</p>
+        
+        <p>Whether you're <strong>purchasing property, refinancing, or conducting due diligence</strong>, our title search services provide the <strong>comprehensive analysis and risk assessment</strong> you need to make informed decisions.</p>
+        
+        <p>With <strong>25+ years of experience</strong> in Mexican property law, Lex Advisors has helped <strong>thousands of clients</strong> successfully identify and resolve title issues, ensuring <strong>secure property ownership and transaction success</strong>.</p>
       </div>
     </section>
 
@@ -70,6 +92,10 @@
           <h3>Real Estate</h3>
           <p>Comprehensive legal aid for real estate transactions</p>
         </a>
+        <a href="notary-services.html" class="service-card">
+          <h3>Notary Services</h3>
+          <p>Essential for successful legal acts in Mexico</p>
+        </a>
         <a href="appraisals.html" class="service-card">
           <h3>Appraisals</h3>
           <p>Expert valuations for real estate and commercial assets</p>
@@ -78,10 +104,6 @@
           <h3>Rights & Entitlement</h3>
           <p>Securing governmental permit approvals efficiently</p>
         </a>
-        <a href="notary-services.html" class="service-card">
-          <h3>Notary Services</h3>
-          <p>Essential for successful legal acts in Mexico</p>
-        </a>
       </div>
     </section>
   </main>
@@ -89,11 +111,13 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
-      <div><a href="privacy.html">Privacy Notice</a></div>
       <div>© 2024 Lex Advisors. All rights reserved.</div>
-      <div>Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx</div>
+      <div>
+        <a href="../privacy.html">Privacy Notice</a> |
+        Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+      </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

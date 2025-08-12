@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team | Lex Advisors</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -17,7 +18,6 @@
         <img src="files/logos/lex.png" alt="Lex Advisors Logo" class="logo-img">
         <div class="logo-text">
           <span class="logo-main">Lex Advisors</span>
-          <span class="logo-tagline">Your lawyer at Land's End.</span>
         </div>
       </div>
       
@@ -58,40 +58,76 @@
     </div>
   </header>
   <main>
-    <section class="team-hero">
-      <div class="container">
-        <h1>Our Team</h1>
-        <p>Meet the professionals who make Lex Advisors the trusted choice for legal excellence in Baja California.</p>
-      </div>
-    </section>
+    <h1>Our Team</h1>
+    <p class="services-intro">Meet the professionals who make Lex Advisors the trusted choice for legal excellence in Baja California.</p>
 
     <section class="team-section">
       <div class="container">
-        <!-- Leadership Team -->
+        <!-- Leadership Triangle -->
         <div class="team-category">
           <h2>Leadership</h2>
-          <div class="team-grid">
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/javier-mazoy.jpg" alt="Javier Mazoy" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Javier Mazoy</h3>
-                <p class="team-title">General Director</p>
-              </div>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/santiago-mazoy.jpg" alt="Santiago Mazoy" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Santiago Mazoy</h3>
-                <p class="team-title">Director of Operations & Strategic Development</p>
+          <div class="leadership-triangle">
+            <!-- CEO at the top -->
+            <div class="ceo-position">
+              <div class="team-card ceo-card clickable" data-cv="javier-mazoy">
+                <div class="team-image">
+                  <img src="files/images/team/javier_mazoy.jpeg" alt="Javier Mazoy" class="team-member-img">
+                </div>
+                <div class="team-info">
+                  <h3>Javier Mazoy</h3>
+                  <p class="team-title">Founding Partner</p>
+                  <p class="cv-hint">Learn more</p>
+                </div>
               </div>
             </div>
             
-            <div class="team-card">
+
+            
+            <!-- Partners at the bottom -->
+            <div class="partners-row">
+              <div class="partner-position left-partner">
+                <div class="team-card partner-card">
+                  <div class="team-image">
+                    <img src="files/images/team/luis_espinoza.jpeg" alt="Luis Espinoza" class="team-member-img">
+                  </div>
+                  <div class="team-info">
+                    <h3>Luis Manuel Espinoza Colli</h3>
+                    <p class="team-title">Partner & Real Estate Lawyer</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="partner-position center-partner">
+                <div class="team-card partner-card">
+                  <div class="team-image">
+                    <img src="files/images/team/maria_lourdes_de_la_torre.jpeg" alt="María de Lourdes de la Torre Aispuro" class="team-member-img">
+                  </div>
+                  <div class="team-info">
+                    <h3>María de Lourdes de la Torre</h3>
+                    <p class="team-title">Partner & Real Estate Lawyer</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="partner-position right-partner">
+                <div class="team-card partner-card">
+                  <div class="team-image">
+                    <img src="files/images/team/laura-nava.jpg" alt="Laura Nava" class="team-member-img">
+                  </div>
+                  <div class="team-info">
+                    <h3>Laura Nava</h3>
+                    <p class="team-title">Partner & Corporate Lawyer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carolina Position -->
+        <div class="team-category">
+          <div class="carolina-position">
+            <div class="team-card carolina-card">
               <div class="team-image">
                 <img src="files/images/team/carolina-romans.jpg" alt="Carolina Romans" class="team-member-img">
               </div>
@@ -103,63 +139,31 @@
           </div>
         </div>
 
-        <!-- Partners -->
-        <div class="team-category">
-          <h2>Partners</h2>
-          <div class="team-grid">
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/luis-espinoza.jpg" alt="Luis Espinoza" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Luis Espinoza</h3>
-                <p class="team-title">Partner & Real Estate Closing Specialist</p>
-              </div>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/lourdes-de-la-torre.jpg" alt="María de Lourdes de la Torre Aispuro" class="team-member-img">
-              </div>
-                              <div class="team-info">
-                  <h3>María de Lourdes de la Torre Aispuro</h3>
-                  <p class="team-title">Partner & Real Estate Closing Specialist</p>
-                </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Legal Team -->
+
+                <!-- Legal Team -->
         <div class="team-category">
           <h2>Legal Team</h2>
           <div class="team-grid">
+            <!-- Off-Counsel -->
+            <div class="team-card">
+              <div class="team-image">
+                <img src="files/images/team/francisco-javier-mazoy-kuri.jpg" alt="Sr. Francisco Javier Mazoy Kuri" class="team-member-img">
+              </div>
+              <div class="team-info">
+                <h3>Sr. Francisco Javier Mazoy Kuri</h3>
+                <p class="team-title">Off-Counsel</p>
+              </div>
+            </div>
+            
+            <!-- Senior Associates -->
             <div class="team-card">
               <div class="team-image">
                 <img src="files/images/team/salvador.jpg" alt="Salvador" class="team-member-img">
               </div>
               <div class="team-info">
-                <h3>Salvador</h3>
-                <p class="team-title">Complex Closings Specialist</p>
-              </div>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/paulina-ruiz.jpg" alt="Paulina Ruiz" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Paulina Ruiz</h3>
-                <p class="team-title">Closings Specialist & Senior Legal Associate</p>
-              </div>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/cindy-marquez.jpg" alt="Cindy Márquez" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Cindy Márquez</h3>
-                <p class="team-title">Closings & CDS Specialist</p>
+                <h3>Salvador Zarate</h3>
+                <p class="team-title">Senior Associate</p>
               </div>
             </div>
             
@@ -169,17 +173,38 @@
               </div>
               <div class="team-info">
                 <h3>María del Carmen Valencia</h3>
-                <p class="team-title">Corporate Attorney</p>
+                <p class="team-title">Senior Associate</p>
               </div>
             </div>
             
             <div class="team-card">
               <div class="team-image">
-                <img src="files/images/team/laura-nava.jpg" alt="Laura Nava" class="team-member-img">
+                <img src="files/images/team/santiago_mazoy.jpeg" alt="Santiago Mazoy" class="team-member-img">
               </div>
               <div class="team-info">
-                <h3>Laura Nava</h3>
-                <p class="team-title">Public Broker & Legal Advisor</p>
+                <h3>Santiago Mazoy</h3>
+                <p class="team-title">Senior Associate</p>
+              </div>
+            </div>
+            
+            <!-- Associates -->
+            <div class="team-card">
+              <div class="team-image">
+                <img src="files/images/team/paulina-ruiz.jpg" alt="Paulina Ruiz" class="team-member-img">
+              </div>
+              <div class="team-info">
+                <h3>Paulina Ruiz</h3>
+                <p class="team-title">Associate</p>
+              </div>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-image">
+                <img src="files/images/team/cindy-marquez.jpg" alt="Cindy Márquez" class="team-member-img">
+              </div>
+              <div class="team-info">
+                <h3>Cindy Márquez</h3>
+                <p class="team-title">Associate</p>
               </div>
             </div>
             
@@ -189,73 +214,7 @@
               </div>
               <div class="team-info">
                 <h3>Gloria Rodríguez</h3>
-                <p class="team-title">Project Manager & Liaison (La Paz)</p>
-              </div>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/juan-pablo-nunez.jpg" alt="Juan Pablo Nuñez" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Juan Pablo Nuñez</h3>
-                <p class="team-title">Architect & Appraisals Specialist</p>
-              </div>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/bernardo-tumalan.jpg" alt="Bernardo Tumalán" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Bernardo Tumalán</h3>
-                <p class="team-title">Legal Advisor – Tax & Permits</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Legal Assistants -->
-        <div class="team-category">
-          <h2>Legal Assistants</h2>
-          <div class="team-grid">
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/monica.jpg" alt="Mónica" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Mónica</h3>
-                <p class="team-title">Legal Assistant & Closings Specialist</p>
-              </div>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/araceli.jpg" alt="Araceli" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Araceli</h3>
-                <p class="team-title">Legal Assistant</p>
-              </div>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/alberto-guerrero.jpg" alt="Alberto Guerrero" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Alberto Guerrero</h3>
-                <p class="team-title">Legal Assistant</p>
-              </div>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/elizabeth-galaviz.jpg" alt="Elizabeth Galaviz Palacios" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Elizabeth Galaviz Palacios</h3>
-                <p class="team-title">Legal Assistant</p>
+                <p class="team-title">Associate</p>
               </div>
             </div>
             
@@ -264,8 +223,8 @@
                 <img src="files/images/team/ruth.jpg" alt="Ruth" class="team-member-img">
               </div>
               <div class="team-info">
-                <h3>Ruth</h3>
-                <p class="team-title">Legal Assistant</p>
+                <h3>Ruth Torres</h3>
+                <p class="team-title">Associate</p>
               </div>
             </div>
             
@@ -275,11 +234,74 @@
               </div>
               <div class="team-info">
                 <h3>Jorge Rico</h3>
-                <p class="team-title">Legal Assistant & Registry Specialist</p>
+                <p class="team-title">Associate</p>
+              </div>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-image">
+                <img src="files/images/team/alberto-guerrero.jpg" alt="Alberto Guerrero" class="team-member-img">
+              </div>
+              <div class="team-info">
+                <h3>Alberto Guerrero</h3>
+                <p class="team-title">Associate</p>
+              </div>
+            </div>
+            
+            <!-- Paralegals -->
+            <div class="team-card">
+              <div class="team-image">
+                <img src="files/images/team/monica.jpg" alt="Mónica" class="team-member-img">
+              </div>
+              <div class="team-info">
+                <h3>Mónica Covarrubias</h3>
+                <p class="team-title">Paralegal</p>
+              </div>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-image">
+                <img src="files/images/team/araceli.jpg" alt="Araceli" class="team-member-img">
+              </div>
+              <div class="team-info">
+                <h3>Araceli Montalvo</h3>
+                <p class="team-title">Paralegal</p>
+              </div>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-image">
+                <img src="files/images/team/elizabeth-galaviz.jpg" alt="Elizabeth Galaviz Palacios" class="team-member-img">
+              </div>
+              <div class="team-info">
+                <h3>Elizabeth Galaviz Palacios</h3>
+                <p class="team-title">Paralegal</p>
+              </div>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-image">
+                <img src="files/images/team/juan-pablo-nunez.jpg" alt="Juan Pablo Nuñez" class="team-member-img">
+              </div>
+              <div class="team-info">
+                <h3>Juan Pablo Nuñez</h3>
+                <p class="team-title">Paralegal</p>
+              </div>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-image">
+                <img src="files/images/team/bernardo-tumalan.jpg" alt="Bernardo Tumalán" class="team-member-img">
+              </div>
+              <div class="team-info">
+                <h3>Bernardo Tumalán</h3>
+                <p class="team-title">Paralegal</p>
               </div>
             </div>
           </div>
         </div>
+
+
 
         <!-- Administrative Team -->
         <div class="team-category">
@@ -291,7 +313,7 @@
               </div>
               <div class="team-info">
                 <h3>Fernanda Maldonado</h3>
-                <p class="team-title">Collections Coordinator</p>
+                <p class="team-title">Management</p>
               </div>
             </div>
             
@@ -301,27 +323,7 @@
               </div>
               <div class="team-info">
                 <h3>María Isabel Yee Savin</h3>
-                <p class="team-title">Collections Coordinator</p>
-              </div>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/carlos-green.jpg" alt="Carlos Green" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Carlos Green</h3>
-                <p class="team-title">External Accountant</p>
-              </div>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-image">
-                <img src="files/images/team/irene-gomez.jpg" alt="Irene Gómez" class="team-member-img">
-              </div>
-              <div class="team-info">
-                <h3>Irene Gómez</h3>
-                <p class="team-title">Reception & Operations Coordinator</p>
+                <p class="team-title">Management</p>
               </div>
             </div>
             
@@ -331,7 +333,7 @@
               </div>
               <div class="team-info">
                 <h3>Jessica Calderón</h3>
-                <p class="team-title">Accounting Assistant & Executive Secretary</p>
+                <p class="team-title">Executive Assistant</p>
               </div>
             </div>
             
@@ -341,7 +343,7 @@
               </div>
               <div class="team-info">
                 <h3>José Nava</h3>
-                <p class="team-title">Messenger, Driver & Liaison</p>
+                <p class="team-title">Executive Assistant</p>
               </div>
             </div>
             
@@ -351,7 +353,7 @@
               </div>
               <div class="team-info">
                 <h3>Yolanda Cámara</h3>
-                <p class="team-title">Personal Coordinator to the General Director</p>
+                <p class="team-title">Executive Assistant</p>
               </div>
             </div>
             
@@ -361,7 +363,7 @@
               </div>
               <div class="team-info">
                 <h3>Verónica de León</h3>
-                <p class="team-title">Office Maintenance Coordinator</p>
+                <p class="team-title">Executive Assistant</p>
               </div>
             </div>
             
@@ -374,21 +376,37 @@
                 <p class="team-title">IT Engineer</p>
               </div>
             </div>
+            
+            <div class="team-card">
+              <div class="team-image">
+                <img src="files/images/team/irene-gomez.jpg" alt="Irene Gómez" class="team-member-img">
+              </div>
+              <div class="team-info">
+                <h3>Irene Gómez</h3>
+                <p class="team-title">Reception</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-content">
-      <div>© 2024 Lex Advisors. All rights reserved.</div>
-      <div>
-        <a href="privacy.html">Privacy Notice</a> |
-        Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+
+  <!-- CV Popup -->
+  <div id="cv-popup" class="cv-popup">
+    <div class="cv-popup-overlay"></div>
+    <div class="cv-popup-container">
+      <div class="cv-popup-header">
+        <button class="cv-popup-close">&times;</button>
+      </div>
+      <div class="cv-popup-body">
+        <div id="cv-content"></div>
       </div>
     </div>
-  </footer>
+  </div>
+
+  <!-- Footer Container -->
+  <div id="footer-container"></div>
   <script src="script.js"></script>
 </body>
 </html> 

@@ -1,0 +1,23 @@
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <div>Copyright © 2025 Lex Advisors. All rights reserved.</div>
+    <div>
+      <a href="privacy.html" id="privacy-link">Privacy Notice</a> |
+      Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+    </div>
+  </div>
+</footer>
+<script>
+// Fix privacy link path for service pages
+document.addEventListener('DOMContentLoaded', function() {
+  const privacyLink = document.getElementById('privacy-link');
+  if (privacyLink) {
+    const currentPath = window.location.pathname;
+    const isInServicesDir = currentPath.includes('/services/');
+    if (isInServicesDir) {
+      privacyLink.href = '../privacy.html';
+    }
+  }
+});
+</script>

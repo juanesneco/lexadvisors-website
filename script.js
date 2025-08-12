@@ -96,6 +96,15 @@ function loadFooter() {
       .then(response => response.text())
       .then(html => {
         footerContainer.innerHTML = html;
+        
+        // Fix logo path after loading footer
+        const footerLogo = document.getElementById('footer-logo');
+        if (footerLogo) {
+          const currentPath = window.location.pathname;
+          const isInServicesDir = currentPath.includes('/services/');
+          const logoPath = isInServicesDir ? '../files/logos/lex.png' : 'files/logos/lex.png';
+          footerLogo.src = logoPath;
+        }
       })
       .catch(error => {
         console.error('Error loading footer:', error);

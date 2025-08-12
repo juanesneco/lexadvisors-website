@@ -15,7 +15,7 @@
 body {
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
-  background: var(--color-bg);
+  background: #fff;
   color: var(--color-text);
   line-height: 1.6;
 }
@@ -627,23 +627,103 @@ p, span, div, a, button, input, textarea, select, label {
 .site-footer {
   background: var(--color-footer);
   color: var(--color-primary);
-  padding: 2rem 0 1rem 0;
-  text-align: center;
-  border-top: 1px solid #cfd8dc;
+  padding: 1rem 0 0.75rem 0;
   margin-top: 3rem;
 }
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
   font-size: 1rem;
+  padding: 0 1rem;
 }
-.footer-content a {
+.footer-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+}
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+}
+.footer-logo-img {
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  max-height: 50px;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
+}
+.footer-tagline {
+  font-size: 0.9rem;
+  color: var(--color-secondary);
+  margin: 0;
+  font-style: italic;
+}
+.footer-email a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.footer-email a:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+.footer-section h3 {
+  color: var(--color-primary);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+.footer-menu a {
+  display: block;
+  color: var(--color-accent);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.footer-menu a:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+.footer-contact p {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+.contact-info strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.contact-info a {
   color: var(--color-accent);
   text-decoration: none;
 }
-.footer-content a:hover {
+.contact-info a:hover {
   text-decoration: underline;
   color: var(--color-primary);
+}
+.quick-links a {
+  color: var(--color-accent);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.quick-links a:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+.footer-bottom {
+  padding-top: 0.5rem;
+}
+.copyright {
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: 0.8rem;
 }
 
 /* Enhanced Responsive Styles */
@@ -1387,6 +1467,52 @@ p, span, div, a, button, input, textarea, select, label {
 
 /* Responsive Tweaks */
 @media (max-width: 900px) {
+  .service-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .service-image {
+    position: static;
+    order: -1;
+  }
+  
+  .service-main-image {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .related-services .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .related-services .service-card {
+    padding: 1rem;
+  }
+  
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .footer-brand {
+    align-items: center;
+  }
+  
+  .footer-logo-img {
+    height: auto;
+    max-width: 180px;
+    max-height: 45px;
+    object-fit: contain;
+  }
+  
   .container {
     padding: 0 1rem;
   }
@@ -2154,10 +2280,11 @@ p, span, div, a, button, input, textarea, select, label {
 .service-hero {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   color: #fff;
-  padding: 6rem 2rem 4rem 2rem;
+  padding: 3rem 2rem 2rem 2rem;
   text-align: center;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  width: 100%;
 }
 
 .service-hero::before {
@@ -2172,16 +2299,17 @@ p, span, div, a, button, input, textarea, select, label {
 }
 
 .service-hero-content {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  padding: 0 2rem;
 }
 
 .service-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -2203,9 +2331,31 @@ p, span, div, a, button, input, textarea, select, label {
 }
 
 .service-content {
+  max-width: 100%;
+  margin: 0;
+  padding: 2rem;
+  background: #fff;
+}
+
+.service-content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.service-image {
+  position: sticky;
+  top: 100px;
+}
+
+.service-main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .service-text {
@@ -2213,6 +2363,7 @@ p, span, div, a, button, input, textarea, select, label {
   margin: 0 auto;
   font-size: 1.1rem;
   line-height: 1.8;
+  color: var(--color-text);
 }
 
 .service-text p {
@@ -2229,9 +2380,10 @@ p, span, div, a, button, input, textarea, select, label {
 }
 
 .related-services {
-  background: #f8f9fa;
-  padding: 3rem 2rem;
+  background: #fff;
+  padding: 2rem;
   margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 .related-services h2 {
@@ -2240,12 +2392,66 @@ p, span, div, a, button, input, textarea, select, label {
   font-size: 2rem;
 }
 
+/* Related Services Grid - Smaller Cards */
+.related-services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.related-services .service-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-services .service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.related-services .service-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.related-services .service-icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.related-services .service-card h3 {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin: 0;
+  font-weight: 600;
+}
+
+.related-services .service-card p {
+  font-size: 0.9rem;
+  color: var(--color-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* Services page main content */
 main {
-  padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  margin-top: 80px; /* Account for fixed header */
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+  margin-top: 80px; /* Restore margin to prevent header cropping */
+  background: #fff;
 }
 
 /* Home page specific - remove padding for hero section */
@@ -2509,13 +2715,14 @@ main h1 {
   align-items: center;
   max-width: 800px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 2rem 0;
+  gap: 1rem;
 }
 
 .ceo-position {
   position: relative;
   z-index: 3;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .ceo-card {
@@ -2597,7 +2804,8 @@ main h1 {
 /* Responsive adjustments for the triangle */
 @media (max-width: 900px) {
   .leadership-triangle {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
+    gap: 0.75rem;
   }
   
   .ceo-card {
@@ -2636,7 +2844,8 @@ main h1 {
 
 @media (max-width: 600px) {
   .leadership-triangle {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
+    gap: 0.5rem;
   }
   
   .ceo-card {
@@ -2702,13 +2911,13 @@ main h1 {
 }
 
 .carolina-card .team-image {
-  width: 190px;
-  height: 190px;
+  width: 100%;
+  height: 220px;
 }
 
 .carolina-card .team-member-img {
-  width: 190px;
-  height: 190px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -2739,10 +2948,14 @@ main h1 {
     transform: scale(0.9);
   }
   
-  .carolina-card .team-image,
+  .carolina-card .team-image {
+    width: 100%;
+    height: 200px;
+  }
+  
   .carolina-card .team-member-img {
-    width: 170px;
-    height: 170px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
   }
@@ -2761,10 +2974,14 @@ main h1 {
     transform: scale(0.85);
   }
   
-  .carolina-card .team-image,
+  .carolina-card .team-image {
+    width: 100%;
+    height: 180px;
+  }
+  
   .carolina-card .team-member-img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
   }

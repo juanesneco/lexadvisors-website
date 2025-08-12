@@ -1,13 +1,49 @@
 <!-- Footer -->
 <footer class="site-footer">
   <div class="footer-content">
-    <div>Copyright © 2025 Lex Advisors. All rights reserved.</div>
-    <div>
-      <a href="privacy.html" id="privacy-link">Privacy Notice</a> |
-      Paseo Finisterra #136 Suite 6 & 10, San José del Cabo, B.C.S. 23406 | Tel: (624) 142 5453 | info@lexadvisors.com.mx
+    <div class="footer-main">
+      <!-- Left Column: Logo, Tagline, Email -->
+      <div class="footer-section">
+        <div class="footer-brand">
+          <img src="" alt="Lex Advisors Logo" class="footer-logo-img" id="footer-logo">
+          <p class="footer-tagline">Your lawyer at Land's End</p>
+          <p class="footer-email"><a href="mailto:info@lexadvisors.com.mx">info@lexadvisors.com.mx</a></p>
+        </div>
+      </div>
+      
+      <!-- Middle Column: Menu -->
+      <div class="footer-section">
+        <h3>Menu</h3>
+        <div class="footer-menu">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="team.html">Team</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html" id="privacy-link">Privacy Notice</a>
+        </div>
+      </div>
+      
+      <!-- Right Column: Contact Information -->
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <div class="footer-contact">
+          <p>Paseo Finisterra #136 Suite 6 & 10<br>
+          San José del Cabo, B.C.S. 23406</p>
+          
+          <p>(624) 142 5453 | (624) 142 5452<br>
+          US & CAN predial 011 (52)</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        Copyright © 2025 Lex Advisors. All rights reserved.
+      </div>
     </div>
   </div>
 </footer>
+
 <script>
 // Fix privacy link path for service pages
 document.addEventListener('DOMContentLoaded', function() {
@@ -18,6 +54,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (isInServicesDir) {
       privacyLink.href = '../privacy.html';
     }
+  }
+  
+  // Fix logo path for service pages
+  const footerLogo = document.getElementById('footer-logo');
+  if (footerLogo) {
+    const currentPath = window.location.pathname;
+    const isInServicesDir = currentPath.includes('/services/');
+    const logoPath = isInServicesDir ? '../files/logos/lex.png' : 'files/logos/lex.png';
+    footerLogo.src = logoPath;
   }
 });
 </script>

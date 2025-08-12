@@ -2709,6 +2709,8 @@ main h1 {
 .carolina-card .team-member-img {
   width: 190px;
   height: 190px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .carolina-card .team-info h3 {
@@ -2741,6 +2743,8 @@ main h1 {
   .carolina-card .team-member-img {
     width: 170px;
     height: 170px;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
@@ -2761,6 +2765,8 @@ main h1 {
   .carolina-card .team-member-img {
     width: 150px;
     height: 150px;
+    object-fit: cover;
+    object-position: center;
   }
   
   .carolina-card .team-info h3 {

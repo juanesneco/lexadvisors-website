@@ -1267,7 +1267,7 @@ p, span, div, a, button, input, textarea, select, label {
   min-height: 100vh;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  background: url('../files/images/general/baja_javier.jpeg') center center/cover no-repeat;
+  background: url('./files/images/general/baja_javier.jpeg') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

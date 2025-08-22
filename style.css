@@ -341,12 +341,12 @@ p, span, div, a, button, input, textarea, select, label {
 
 /* Team Section */
 .team-section {
-  padding: 4rem 0;
+  padding: 1rem 0;
   background: #fff;
 }
 
 .team-category {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .team-category h2 {
@@ -436,6 +436,438 @@ p, span, div, a, button, input, textarea, select, label {
   margin-bottom: 0.5rem;
   font-weight: 700;
   font-family: 'Times New Roman', Times, serif;
+}
+
+/* Team List Layout (for Legal and Administrative Teams) */
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-list-item {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+.team-list-item:nth-child(odd) {
+  border-right: 1px solid #e0e0e0;
+  padding-right: 1.5rem;
+}
+
+.team-list-item:nth-child(even) {
+  padding-left: 1.5rem;
+}
+
+.team-list-item:nth-last-child(-n+2):nth-child(odd) {
+  border-bottom: none;
+}
+
+.team-list-item:nth-last-child(-n+2):nth-child(even) {
+  border-bottom: none;
+}
+
+.team-list-item:hover {
+  background-color: #f8f9fa;
+}
+
+.team-list-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.team-list-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  background-color: #f0f0f0;
+  min-width: 80px;
+  min-height: 80px;
+}
+
+.team-list-item:hover .team-list-image img {
+  filter: grayscale(0%);
+}
+
+.team-list-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.team-list-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.team-list-info .team-title {
+  font-size: 1rem;
+  color: var(--color-secondary);
+  margin: 0;
+  font-weight: 500;
+}
+
+.team-contact {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.team-contact p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.team-contact strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.team-contact a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.team-contact a:hover {
+  color: var(--color-primary);
+}
+
+.phone-placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Leadership Banners */
+.leadership-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  color: inherit;
+}
+
+.leadership-banner:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.banner-info {
+  flex: 1;
+  color: #fff;
+}
+
+.banner-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.banner-title {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.banner-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.banner-contact p {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.banner-contact strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.banner-contact a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.banner-contact a:hover {
+  color: #fff;
+}
+
+.learn-more-link {
+  margin-top: 1rem !important;
+}
+
+.learn-more-link a {
+  color: var(--color-accent) !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 1rem;
+}
+
+.learn-more-link a:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+.banner-image {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.leadership-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+/* Profile Page Styles */
+.breadcrumbs {
+  padding: 1rem 0;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 0;
+}
+
+.breadcrumbs .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.breadcrumbs a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-primary);
+}
+
+.breadcrumbs span {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+/* Javier's Banner */
+.javier-banner {
+  background: var(--color-primary);
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
+
+.javier-banner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Old Javier banner styles - to be removed */
+.javier-banner-info {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  position: relative;
+}
+
+.javier-banner-info h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.javier-banner-title {
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.javier-banner-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.javier-banner-contact p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.javier-banner-contact strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.javier-banner-contact a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.javier-banner-contact a:hover {
+  color: var(--color-primary);
+}
+
+.banner-icons {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2.5rem;
+}
+
+.banner-image {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.banner-img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.cv-content {
+  padding: 2rem 0;
+  background: #fff;
+}
+
+.cv-content .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cv-section {
+  margin-bottom: 3rem;
+}
+
+.cv-section h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.cv-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.education-item, .experience-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.education-item:last-child, .experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.education-item h3, .experience-item h3 {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.institution {
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.year {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.expertise-list, .achievements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.expertise-list li, .achievements-list li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.expertise-list li:before, .achievements-list li:before {
+  content: "•";
+  color: var(--color-accent);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 
 .team-title {
@@ -1467,6 +1899,126 @@ p, span, div, a, button, input, textarea, select, label {
 
 /* Responsive Tweaks */
 @media (max-width: 900px) {
+  .javier-banner .container {
+    padding: 0 1rem;
+  }
+  
+  .javier-banner {
+    padding: 2rem 0;
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .javier-banner-info {
+    max-width: 100%;
+    padding: 2rem;
+  }
+  
+  .javier-banner-info h1 {
+    font-size: 2rem;
+  }
+  
+  .banner-img {
+    width: 250px;
+    height: 300px;
+  }
+  
+  .banner-icons {
+    position: static;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .cv-content .container {
+    padding: 0 1rem;
+  }
+  
+  .leadership-banner {
+    margin-bottom: 1.5rem;
+  }
+  
+  .banner-content {
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+  
+  .banner-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .banner-title {
+    font-size: 1rem;
+  }
+  
+  .banner-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .team-list {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+  }
+  
+  .team-list-item:nth-child(odd),
+  .team-list-item:nth-child(even) {
+    border-right: none;
+    padding: 1rem 0;
+  }
+  
+  .team-list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .team-list-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 1.5rem;
+  }
+  
+  .team-list-image img {
+    min-width: 60px;
+    min-height: 60px;
+  }
+  
+  .team-list-info h3 {
+    font-size: 1.1rem;
+  }
+  
+  .team-contact {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .metrics-header h2 {
+    font-size: 2rem;
+  }
+  
+  .metrics-header p {
+    font-size: 1rem;
+  }
+  
+  .metric-card {
+    padding: 1.5rem;
+  }
+  
+  .metric-image {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .metric-number {
+    font-size: 2rem;
+  }
+  
   .service-content-wrapper {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1576,6 +2128,116 @@ p, span, div, a, button, input, textarea, select, label {
 }
 }
 @media (max-width: 600px) {
+  .javier-banner {
+    padding: 1.5rem 0;
+  }
+  
+  .javier-banner .container {
+    padding: 0 0.5rem;
+  }
+  
+  .javier-banner-info {
+    padding: 1.5rem;
+  }
+  
+  .javier-banner-info h1 {
+    font-size: 1.8rem;
+  }
+  
+  .javier-banner-title {
+    font-size: 1rem;
+  }
+  
+  .banner-img {
+    width: 200px;
+    height: 250px;
+  }
+  
+  .cv-content .container {
+    padding: 0 0.5rem;
+  }
+  
+  .cv-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .leadership-banner {
+    margin-bottom: 1rem;
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .banner-info h3 {
+    font-size: 1.3rem;
+  }
+  
+  .banner-title {
+    font-size: 0.9rem;
+  }
+  
+  .banner-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .team-list {
+    max-width: 100%;
+  }
+  
+  .team-list-item {
+    padding: 0.75rem 0;
+  }
+  
+  .team-list-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  
+  .team-list-image img {
+    min-width: 50px;
+    min-height: 50px;
+  }
+  
+  .team-list-info h3 {
+    font-size: 1rem;
+  }
+  
+  .team-list-info .team-title {
+    font-size: 0.9rem;
+  }
+  
+  .team-contact p {
+    font-size: 0.8rem;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .metrics-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .metric-card {
+    padding: 1rem;
+  }
+  
+  .metric-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .metric-number {
+    font-size: 1.8rem;
+  }
+  
   .container {
     padding: 0 0.5rem;
   }
@@ -1844,6 +2506,17 @@ p, span, div, a, button, input, textarea, select, label {
 .about-preview {
   padding: 5rem 0;
   background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin: 2rem auto;
+  max-width: 1400px;
+  width: 95%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-preview:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
 }
 
 .about-content {
@@ -1929,6 +2602,92 @@ p, span, div, a, button, input, textarea, select, label {
   border-radius: 12px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.1);
   margin-bottom: 2rem;
+}
+
+/* Metrics Section */
+.metrics-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: #fff;
+}
+
+.metrics-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.metrics-header h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.metrics-header p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.metric-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.metric-icon {
+  margin-bottom: 1.5rem;
+}
+
+.metric-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.metric-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.metric-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.metric-description {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
 }
 
 /* Trust Section */
@@ -2481,6 +3240,21 @@ body:has(.contact-form-section) {
   background: #fff;
 }
 
+/* Javier Mazoy page specific - ensure proper spacing */
+body:has(.container h1:first-child) main {
+  margin-top: 200px; /* Extra spacing for profile pages */
+}
+
+/* Alternative for browsers that don't support :has() */
+.javier-profile-page main {
+  margin-top: 200px;
+}
+
+/* Additional padding for the container on Javier's page */
+.javier-profile-page .container {
+  padding-top: 50px;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -2545,7 +3319,7 @@ body:has(.contact-form-section) {
   text-align: center;
   font-size: 1.2rem;
   color: var(--color-secondary);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -2992,6 +3766,245 @@ main h1 {
   
   .carolina-card .team-title {
     font-size: 0.95rem;
+  }
+}
+
+/* Professional Profile Banner */
+.profile-banner {
+  width: 100%;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #1a4d66 100%);
+  padding: 0;
+  margin-top: 80px; /* Account for fixed header */
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(16, 64, 90, 0.1);
+  z-index: 1;
+}
+
+.banner-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  min-height: 400px;
+}
+
+.banner-info-card {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  width: 100%;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.banner-name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.banner-position {
+  font-size: 1.3rem;
+  color: var(--color-secondary);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.banner-contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.contact-label {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  width: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-value {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  transition: color 0.3s ease;
+}
+
+.contact-value:hover {
+  color: var(--color-primary);
+}
+
+
+
+.banner-image-container {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.banner-portrait {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  background: #f0f0f0;
+}
+
+/* Remove top margin/padding from main content */
+.javier-profile-page main {
+  margin-top: 0;
+  padding-top: 2rem;
+}
+
+.javier-profile-page .container {
+  padding-top: 0;
+}
+
+/* Responsive adjustments for profile banner */
+@media (max-width: 1200px) {
+  .banner-content-wrapper {
+    gap: 3rem;
+  }
+  
+  .banner-info-card {
+    max-width: 400px;
+    padding: 2.5rem;
+  }
+  
+  .banner-name {
+    font-size: 2.5rem;
+  }
+  
+  .banner-portrait {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner-container {
+    padding: 2rem 1rem;
+  }
+  
+  .banner-content-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    min-height: auto;
+    text-align: center;
+  }
+  
+  .banner-info-card {
+    max-width: 100%;
+    padding: 2rem;
+  }
+  
+  .banner-name {
+    font-size: 2.2rem;
+  }
+  
+  .banner-position {
+    font-size: 1.1rem;
+  }
+  
+
+  
+  .banner-portrait {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-banner {
+    margin-top: 70px; /* Account for smaller header on mobile */
+  }
+  
+  .banner-container {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .banner-info-card {
+    padding: 1.5rem;
+    margin: 0 0.5rem;
+  }
+  
+  .banner-name {
+    font-size: 2rem;
+  }
+  
+  .banner-position {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-item {
+    margin-bottom: 0.8rem;
+  }
+  
+  .contact-label {
+    font-size: 1rem;
+  }
+  
+  .contact-value {
+    font-size: 1rem;
+  }
+  
+  .banner-portrait {
+    width: 250px;
+    height: 250px;
+  }
+  
+
+}
+
+@media (max-width: 480px) {
+  .banner-info-card {
+    padding: 1.2rem;
+    margin: 0 0.25rem;
+  }
+  
+  .banner-name {
+    font-size: 1.8rem;
+  }
+  
+  .banner-portrait {
+    width: 220px;
+    height: 220px;
   }
 }
 
